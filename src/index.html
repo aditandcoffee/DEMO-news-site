@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News site clone</title>
+    <!-- <link rel="stylesheet" href="../mycss/tailwind.css"> -->
+    <link href="../dist/output.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../mycss/style.css"> -->
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../mycss/input.css">
+ 
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- main top bar -->
+    <div class="h-11 bg-indigo-800 text-white flex justify-between items-center">
+        <div class="ml-12 flex">
+            <i class="ri-calendar-2-fill"></i> 18 Jesth, 2080 Thursday
+            <p class="mx-10"><i class="ri-time-line"></i> 8:03 AM</p>
+        </div>
+        <div class="flex justify-between w-32 text-lg mr-12">
+            <i class="ri-twitter-line"></i>
+            <i class="ri-instagram-line"></i>
+            <i class="ri-facebook-circle-line"></i>
+
+        </div>
+
+    </div>
+
+
+    <!-- logo bar -->
+    <div class="flex justify-between items-center mx-12">
+        <img src="http://newsdemo.bitmapitsolution.com/images/logo.png" alt="">
+        <img class="h-16"
+            src="http://newsdemo.bitmapitsolution.com/images/ads/4CD893B5-80AF-4B07-B218-72463EDA4B28_1672119905.gif"
+            alt="">
+    </div>
+
+
+    <!-- navmenu -->
+    <nav
+        class="text-lg font-semibold border-solid border-2 border-gray-200 bg-gray-100 px-12 py-5 shadow sticky top-0 z-10">
+        <div class="mx-12 text-blue-500  ">
+            <a class="mx-3 hover:text-orange-500" href="#"><i class="ri-home-4-line"></i> Home</a>
+            <a class="mx-3 hover:text-orange-500" href="#">National</a>
+            <a class="mx-3 hover:text-orange-500" href="#">Politics</a>
+            <a class="mx-3 hover:text-orange-500" href="#">Economics</a>
+            <a class="mx-3 hover:text-orange-500" href="#">International</a>
+            <a class="mx-3 hover:text-orange-500" href="#">Health</a>
+            <a class="mx-3 hover:text-orange-500" href="#">Tech</a>
+            <a class="mx-3 hover:text-orange-500" href="#">Sports</a>
+            <a class="mx-3 hover:text-orange-500" href="#">Entertainment</a>
+            <a class="mx-3 hover:text-orange-500" href="#">Videos</a>
+        </div>
+
+    </nav>
+
+    <!-- trending now marqee section -->
+    <div class="mx-12 h-16 flex items-center">
+        <span class="bg-red-500 px-3 py-2 text-white rounded">TRENDING NOW</span>
+        <div class="flex-1">
+            <marquee behavior="" direction="">Flash news 1: Lorem ipsum dolor sit || Flash news 2: amet consectetur
+                adipisicing elit || Flash news 3: Aspernatur, perspiciatis || Flash news 4: Lorem ipsum dolor sit amet
+                || Flash news 5: Lorem ipsum dolor sit || </marquee>
+        </div>
+    </div>
+
+    <!-- top text news section -->
+    <div class="bg-gray-100 text-center mx-16 text-blue-700 hover:shadow">
+        <p class="text-5xl px-12 py-5 hover:scale-105 transition-all duration-700">National News 1, Lorem, ipsum dolor.
+        </p>
+
+    </div>
+    <div class="bg-gray-100  mx-16 my-10  hover:shadow hover:scale-105 transition-all duration-700">
+        <p class="text-center text-blue-700 text-5xl px-12 py-5  font-semibold">National News 2, Lorem, ipsum dolor
+            ipsum</p>
+        <img class="w-full"
+            src="http://newsdemo.bitmapitsolution.com/images/news_images/Gyanmala_6b0tP2SKyK_1637416590_1672120923.jpg"
+            alt="">
+        <p class="mx-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nemo recusandae pariatur
+            totam a sint repudiandae quisquam aperiam quam numquam. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Quam tempore enim quasi veritatis, rem error architecto totam repellat nisi velit excepturi saepe?
+            Impedit sint itaque, ab architecto libero repudiandae molestiae!</p>
+
+    </div>
+    <hr class="mx-12 my-12">
+
+
+
+
+    <!-- main pannel -->
+    <div class="grid grid-cols-3 gap-10 px-12 py-5 ">
+        <!-- left pannel -->
+        <div class="col-span-2 grid grid-cols-3 gap-5">
+            <div class="col-span-3">
+                <div class="">
+                    <img class="w-full relative hover:scale-105 transition-all"
+                        src="http://newsdemo.bitmapitsolution.com/images/news_images/5f4e06201d6f7_but_1641745794_1672121039.jpg"
+                        alt="" srcset="">
+                    <div class="absolute -mt-28 px-12">
+                        <span class="bg-gray-100 px-1 py-2 rounded">National</span>
+                        <p class="text-white text-4xl mt-3">Police catches illegal stuffs</p>
+
+
+                    </div>
+
+                </div>
+            </div>
+            <div
+                class="hover:bg-slate-100 rounded px-2 py-2  hover:shadow-lg hover:scale-105 transition-all duration-300">
+                <img class="mb-5 rounded-lg"
+                    src="http://newsdemo.bitmapitsolution.com/images/news_images/raprapa-5_1638430888_1672120629.jpg"
+                    alt="">
+                <span class="bg-red-600 text-white px-1 py-2 rounded">Politics</span>
+                <p class="text-lg mt-3">Political news of nepal</p>
+            </div>
+            <div
+                class="hover:bg-slate-100 rounded px-2 py-2  hover:shadow-lg hover:scale-105 transition-all duration-300">
+                <img class="mb-5 rounded-lg"
+                    src="http://newsdemo.bitmapitsolution.com/images/news_images/raprapa-5_1638430888_1672120629.jpg"
+                    alt="">
+                <span class="bg-red-600 text-white px-1 py-2 rounded">Politics</span>
+                <p class="text-lg mt-3">Political news of nepal</p>
+            </div>
+            <div
+                class="hover:bg-slate-100 rounded px-2 py-2  hover:shadow-lg hover:scale-105 transition-all duration-300">
+                <img class="mb-5 rounded-lg"
+                    src="http://newsdemo.bitmapitsolution.com/images/news_images/raprapa-5_1638430888_1672120629.jpg"
+                    alt="">
+                <span class="bg-red-600 text-white px-1 py-2 rounded">Politics</span>
+                <p class="text-lg mt-3">Political news of nepal</p>
+            </div>
+
+        </div>
+
+
+        <!-- right pannel -->
+        <div>
+            <div class="flex bg-slate-200 rounded-lg my-2 hover:shadow hover:scale-105 transition-all duration-300">
+                <img src="http://newsdemo.bitmapitsolution.com/images/news_images/aayog_1636973701_1672120990.jpg"
+                    class="h-24 rounded" alt="" srcset="">
+                <div class="mx-5 py-3">
+                    <span class="bg-red-600 text-white px-1 py-2 rounded">National</span>
+                    <p class="py-3">National News Breaking News</p>
+                </div>
+            </div>
+
+            <div class="flex bg-slate-200 rounded-lg my-2 hover:shadow hover:scale-105 transition-all duration-300">
+                <img src="http://newsdemo.bitmapitsolution.com/images/news_images/aayog_1636973701_1672120990.jpg"
+                    class="h-24 rounded" alt="" srcset="">
+                <div class="mx-5 py-3">
+                    <span class="bg-red-600 text-white px-1 py-2 rounded">National</span>
+                    <p class="py-3">National News Breaking News</p>
+                </div>
+            </div>
+
+            <div class="flex bg-slate-200 rounded-lg my-2 hover:shadow hover:scale-105 transition-all duration-300">
+                <img src="http://newsdemo.bitmapitsolution.com/images/news_images/aayog_1636973701_1672120990.jpg"
+                    class="h-24 rounded" alt="" srcset="">
+                <div class="mx-5 py-3">
+                    <span class="bg-red-600 text-white px-1 py-2 rounded">National</span>
+                    <p class="py-3">National News Breaking News</p>
+                </div>
+            </div>
+
+            <div class="flex bg-slate-200 rounded-lg my-2 hover:shadow hover:scale-105 transition-all duration-300">
+                <img src="http://newsdemo.bitmapitsolution.com/images/news_images/aayog_1636973701_1672120990.jpg"
+                    class="h-24 rounded" alt="" srcset="">
+                <div class="mx-5 py-3">
+                    <span class="bg-red-600 text-white px-1 py-2 rounded">National</span>
+                    <p class="py-3">National News Breaking News</p>
+                </div>
+            </div>
+
+            <div class="flex bg-slate-200 rounded-lg my-2 hover:shadow hover:scale-105 transition-all duration-300">
+                <img src="http://newsdemo.bitmapitsolution.com/images/news_images/aayog_1636973701_1672120990.jpg"
+                    class="h-24 rounded" alt="" srcset="">
+                <div class="mx-5 py-3">
+                    <span class="bg-red-600 text-white px-1 py-2 rounded">National</span>
+                    <p class="py-3">National News Breaking News</p>
+                </div>
+            </div>
+
+            <div class="flex bg-slate-200 rounded-lg my-2 hover:shadow hover:scale-105 transition-all duration-300">
+                <img src="http://newsdemo.bitmapitsolution.com/images/news_images/aayog_1636973701_1672120990.jpg"
+                    class="h-24 rounded" alt="" srcset="">
+                <div class="mx-5 py-3">
+                    <span class="bg-red-600 text-white px-1 py-2 rounded">National</span>
+                    <p class="py-3">National News Breaking News</p>
+                </div>
+            </div>
+
+            <div class="flex bg-slate-200 rounded-lg my-2 hover:shadow hover:scale-105 transition-all duration-300">
+                <img src="http://newsdemo.bitmapitsolution.com/images/news_images/aayog_1636973701_1672120990.jpg"
+                    class="h-24 rounded" alt="" srcset="">
+                <div class="mx-5 py-3">
+                    <span class="bg-red-600 text-white px-1 py-2 rounded">National</span>
+                    <p class="py-3">National News Breaking News</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="flex items-center justify-center my-12">
+        <img class="w-full mx-12"
+            src="http://newsdemo.bitmapitsolution.com/images/ads/4CD893B5-80AF-4B07-B218-72463EDA4B28_1672119990.gif"
+            alt="">
+    </div>
+
+    <!-- swiper section -->
+    <div class="mx-12 flex items-center">
+        <span class="bg-red-500 px-3 py-2 text-white rounded">Politics</span>
+        <hr class="border-red-500 border-2 w-full">
+    </div>
+    <div class="mx-12 my-12">
+        <div class="swiper myswiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide group">
+                    <div class="">
+                        <img class="relative rounded-lg"
+                            src="http://newsdemo.bitmapitsolution.com/images/news_images/Lila-giri-bhoj-prasad-shrestha-l-jokh-bahadur-mahara-1024x624_1672119329.jpg"
+                            alt="">
+                    </div>
+                    <div
+                        class="absolute -my-28  bg-white text-center mx-12 py-2  group-hover:block hidden cursor-pointer">
+                        <div class="mx-5">
+                            <span class="bg-red-600 px-2 py-1 rounded text-white">Politics</span>
+                            <p class="text-red-500 my-5">Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide group">
+                    <div class="">
+                        <img class="relative rounded-lg"
+                            src="http://newsdemo.bitmapitsolution.com/images/news_images/Lila-giri-bhoj-prasad-shrestha-l-jokh-bahadur-mahara-1024x624_1672119329.jpg"
+                            alt="">
+                    </div>
+                    <div
+                        class="absolute -my-28  bg-white text-center mx-12 py-2  group-hover:block hidden cursor-pointer">
+                        <div class="mx-5">
+                            <span class="bg-red-600 px-2 py-1 rounded text-white">Politics</span>
+                            <p class="text-red-500 my-5">Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide group">
+                    <div class="">
+                        <img class="relative rounded-lg"
+                            src="http://newsdemo.bitmapitsolution.com/images/news_images/Lila-giri-bhoj-prasad-shrestha-l-jokh-bahadur-mahara-1024x624_1672119329.jpg"
+                            alt="">
+                    </div>
+                    <div
+                        class="absolute -my-28  bg-white text-center mx-12 py-2  group-hover:block hidden cursor-pointer">
+                        <div class="mx-5">
+                            <span class="bg-red-600 px-2 py-1 rounded text-white">Politics</span>
+                            <p class="text-red-500 my-5">Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="swiper-slide group">
+                    <div class="">
+                        <img class="relative rounded-lg"
+                            src="http://newsdemo.bitmapitsolution.com/images/news_images/Lila-giri-bhoj-prasad-shrestha-l-jokh-bahadur-mahara-1024x624_1672119329.jpg"
+                            alt="">
+                    </div>
+                    <div
+                        class="absolute -my-28  bg-white text-center mx-12 py-2  group-hover:block hidden cursor-pointer">
+                        <div class="mx-5">
+                            <span class="bg-red-600 px-2 py-1 rounded text-white">Politics</span>
+                            <p class="text-red-500 my-5">Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="swiper-slide group">
+                    <div class="">
+                        <img class="relative rounded-lg"
+                            src="http://newsdemo.bitmapitsolution.com/images/news_images/Lila-giri-bhoj-prasad-shrestha-l-jokh-bahadur-mahara-1024x624_1672119329.jpg"
+                            alt="">
+                    </div>
+                    <div
+                        class="absolute -my-28  bg-white text-center mx-12 py-2  group-hover:block hidden cursor-pointer">
+                        <div class="mx-5">
+                            <span class="bg-red-600 px-2 py-1 rounded text-white">Politics</span>
+                            <p class="text-red-500 my-5">Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="swiper-slide group">
+                    <div class="">
+                        <img class="relative rounded-lg"
+                            src="http://newsdemo.bitmapitsolution.com/images/news_images/Lila-giri-bhoj-prasad-shrestha-l-jokh-bahadur-mahara-1024x624_1672119329.jpg"
+                            alt="">
+                    </div>
+                    <div
+                        class="absolute -my-28  bg-white text-center mx-12 py-2  group-hover:block hidden cursor-pointer">
+                        <div class="mx-5">
+                            <span class="bg-red-600 px-2 py-1 rounded text-white">Politics</span>
+                            <p class="text-red-500 my-5">Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="mx-12 my-12">
+        <img class="w-full" src="http://newsdemo.bitmapitsolution.com/images/ads/Mitsubishi-1230x100-F02_1672120029.gif"
+            alt="">
+    </div>
+
+    <!-- mid grid section -->
+    <div class="grid grid-cols-3">
+        <div class="col-span-2">
+            <div class="mx-12 flex items-center">
+                <span class="bg-red-500 px-3 py-2 text-white rounded">Finance</span>
+                <hr class="border-red-500 border-2 w-full">
+            </div>
+            <div class="grid grid-cols-2 gap-5 mx-12 my-12">
+                <div class="bg-slate-100">
+                    <img class="relative rounded-lg h-80 object-cover"
+                        src="http://newsdemo.bitmapitsolution.com/images/news_images/GettyImages-1151189114-3f70002f53bb427ea2bc292832bbdfe8_1637306927_1672121200.jpg"
+                        alt="">
+                    <p class="absolute bg-red-500 px-2 py-2 text-sm font-bold text-white -mt-12 rounded">Finance</p>
+                    <p class="mx-5 mt-5 text-red-500"><i class="ri-calendar-event-line"></i> June 1, 2023</p>
+                    <p class="mx-5">Lorem ipsum dolor sit amet. </p>
+                </div>
+                <div class="bg-slate-100">
+                    <img class="relative rounded-lg h-80 object-cover"
+                        src="http://newsdemo.bitmapitsolution.com/images/news_images/apple_1637502296_1672121149.jpg"
+                        alt="">
+                    <p class="absolute bg-red-500 px-2 py-2 text-sm font-bold text-white -mt-12 rounded">Finance</p>
+                    <p class="mx-5 mt-5 text-red-500"><i class="ri-calendar-event-line"></i> June 1, 2023</p>
+                    <p class="mx-5">Lorem ipsum dolor sit amet. </p>
+                </div>
+                <div class="bg-slate-100">
+                    <img class=" object-cover h-80 relative rounded-lg "
+                        src="http://newsdemo.bitmapitsolution.com/images/news_images/mushroom_original_1637561140_1672121122.jpg"
+                        alt="">
+                    <p class="absolute bg-red-500 px-2 py-2 text-sm font-bold text-white -mt-12 rounded">Finance</p>
+                    <p class="mx-5 mt-5 text-red-500"><i class="ri-calendar-event-line"></i> June 1, 2023</p>
+                    <p class="mx-5">Lorem ipsum dolor sit amet. </p>
+                </div>
+                <div class="bg-slate-100">
+                    <img class="relative rounded-lg h-80 object-cover "
+                        src="http://newsdemo.bitmapitsolution.com/images/news_images/dad_ko_photo_1646318659_1672121099.jpeg"
+                        alt="">
+                    <p class="absolute bg-red-500 px-2 py-2 text-sm font-bold text-white -mt-12 rounded">Finance</p>
+                    <p class="mx-5 mt-5 text-red-500"><i class="ri-calendar-event-line"></i> June 1, 2023</p>
+                    <p class="mx-5">Lorem ipsum dolor sit amet. </p>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div>
+            <p class="font-bold text-3xl">Follow Us!</p>
+            <div class="grid grid-cols-2 gap-5 mx-12 my-5">
+                <div class="px-3 py-2 bg-slate-200">
+                    <div class="flex items-center gap-5">
+                        <img class="" src="http://newsdemo.bitmapitsolution.com/images/icon-fb.png" alt="">
+                        <div class="">
+                            <h3>8,045 <span class="text-xs text-gray-700 block">Fans</span></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-3 py-2 bg-slate-200">
+                    <div class="flex items-center gap-5">
+                        <img class="" src="http://newsdemo.bitmapitsolution.com/images/icon-tw.png" alt="">
+                        <div class="">
+                            <h3>8,045 <span class="text-xs text-gray-700 block">Fans</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-3 py-2 bg-slate-200">
+                    <div class="flex items-center gap-5">
+                        <img class="" src="http://newsdemo.bitmapitsolution.com/images/icon-ins.png" alt="">
+                        <div class="">
+                            <h3>8,045 <span class="text-xs text-gray-700 block">Fans</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-3 py-2 bg-slate-200">
+                    <div class="flex items-center gap-5">
+                        <img class="" src="http://newsdemo.bitmapitsolution.com/images/icon-yo.png" alt="">
+                        <div class="">
+                            <h3>8,045 <span class="text-xs text-gray-700 block">Fans</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mx-20">
+                <div class="ml-"> <img class=""
+                        src="http://newsdemo.bitmapitsolution.com/images/ads/SBE-300x200-ok-m_1672121630.gif" alt=""
+                        srcset=""></div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <!-- advertisment -->
+    <div class="mx-12 my-12">
+        <img class="w-full" src="http://newsdemo.bitmapitsolution.com/images/ads/1200X1001_1672120126.gif" alt="">
+    </div>
+
+
+    <!-- international news section -->
+    <div class="mx-12 flex items-center">
+        <span class="bg-red-500 px-3 py-2 text-white rounded">International&nbsp;News</span>
+        <hr class="border-red-500 border-2 w-full">
+    </div>
+    <div class="mx-12 my-12">
+        <div class="swiper myswiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide group bg-slate-100 hover:shadow-lg cursor-pointer">
+                    <div class="">
+                        <img class="relative rounded-lg"
+                            src="http://newsdemo.bitmapitsolution.com/images/news_images/https___d1e00ek4ebabms.cloudfront.net_production_d276094b-e301-4dde-8d72-0f2440b864d7_1637306548_1672119561.jpg"
+                            alt="">
+                    </div>
+                    <span class="absolute bg-red-600 text-white -mt-12 rounded px-2 py-1">International</span>
+                    <div class="mx-5 my-5">
+                        <p class="text-red-500 font-bold"><i class="ri-calendar-line"></i> June 7, 2023</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicAlias laborum consequatur quaerat nam
+                            accusantium molestiae?</p>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide group bg-slate-100 hover:shadow-lg cursor-pointer">
+                    <div class="">
+                        <img class="relative rounded-lg"
+                            src="http://newsdemo.bitmapitsolution.com/images/news_images/https___d1e00ek4ebabms.cloudfront.net_production_d276094b-e301-4dde-8d72-0f2440b864d7_1637306548_1672119561.jpg"
+                            alt="">
+                    </div>
+                    <span class="absolute bg-red-600 text-white -mt-12 rounded px-2 py-1">International</span>
+                    <div class="mx-5 my-5">
+                        <p class="text-red-500 font-bold"><i class="ri-calendar-line"></i> June 7, 2023</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicAlias laborum consequatur quaerat nam
+                            accusantium molestiae?</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide group bg-slate-100 hover:shadow-lg cursor-pointer">
+                    <div class="">
+                        <img class="relative rounded-lg"
+                            src="http://newsdemo.bitmapitsolution.com/images/news_images/https___d1e00ek4ebabms.cloudfront.net_production_d276094b-e301-4dde-8d72-0f2440b864d7_1637306548_1672119561.jpg"
+                            alt="">
+                    </div>
+                    <span class="absolute bg-red-600 text-white -mt-12 rounded px-2 py-1">International</span>
+                    <div class="mx-5 my-5">
+                        <p class="text-red-500 font-bold"><i class="ri-calendar-line"></i> June 7, 2023</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicAlias laborum consequatur quaerat nam
+                            accusantium molestiae?</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide group bg-slate-100 hover:shadow-lg cursor-pointer">
+                    <div class="">
+                        <img class="relative rounded-lg"
+                            src="http://newsdemo.bitmapitsolution.com/images/news_images/https___d1e00ek4ebabms.cloudfront.net_production_d276094b-e301-4dde-8d72-0f2440b864d7_1637306548_1672119561.jpg"
+                            alt="">
+                    </div>
+                    <span class="absolute bg-red-600 text-white -mt-12 rounded px-2 py-1">International</span>
+                    <div class="mx-5 my-5">
+                        <p class="text-red-500 font-bold"><i class="ri-calendar-line"></i> June 7, 2023</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicAlias laborum consequatur quaerat nam
+                            accusantium molestiae?</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide group bg-slate-100 hover:shadow-lg cursor-pointer">
+                    <div class="">
+                        <img class="relative rounded-lg"
+                            src="http://newsdemo.bitmapitsolution.com/images/news_images/https___d1e00ek4ebabms.cloudfront.net_production_d276094b-e301-4dde-8d72-0f2440b864d7_1637306548_1672119561.jpg"
+                            alt="">
+                    </div>
+                    <span class="absolute bg-red-600 text-white -mt-12 rounded px-2 py-1">International</span>
+                    <div class="mx-5 my-5">
+                        <p class="text-red-500 font-bold"><i class="ri-calendar-line"></i> June 7, 2023</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicAlias laborum consequatur quaerat nam
+                            accusantium molestiae?</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide group bg-slate-100 hover:shadow-lg cursor-pointer">
+                    <div class="">
+                        <img class="relative rounded-lg"
+                            src="http://newsdemo.bitmapitsolution.com/images/news_images/https___d1e00ek4ebabms.cloudfront.net_production_d276094b-e301-4dde-8d72-0f2440b864d7_1637306548_1672119561.jpg"
+                            alt="">
+                    </div>
+                    <span class="absolute bg-red-600 text-white -mt-12 rounded px-2 py-1">International</span>
+                    <div class="mx-5 my-5">
+                        <p class="text-red-500 font-bold"><i class="ri-calendar-line"></i> June 7, 2023</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicAlias laborum consequatur quaerat nam
+                            accusantium molestiae?</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide group bg-slate-100 hover:shadow-lg cursor-pointer">
+                    <div class="">
+                        <img class="relative rounded-lg"
+                            src="http://newsdemo.bitmapitsolution.com/images/news_images/https___d1e00ek4ebabms.cloudfront.net_production_d276094b-e301-4dde-8d72-0f2440b864d7_1637306548_1672119561.jpg"
+                            alt="">
+                    </div>
+                    <span class="absolute bg-red-600 text-white -mt-12 rounded px-2 py-1">International</span>
+                    <div class="mx-5 my-5">
+                        <p class="text-red-500 font-bold"><i class="ri-calendar-line"></i> June 7, 2023</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicAlias laborum consequatur quaerat nam
+                            accusantium molestiae?</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide group bg-slate-100 hover:shadow-lg cursor-pointer">
+                    <div class="">
+                        <img class="relative rounded-lg"
+                            src="http://newsdemo.bitmapitsolution.com/images/news_images/https___d1e00ek4ebabms.cloudfront.net_production_d276094b-e301-4dde-8d72-0f2440b864d7_1637306548_1672119561.jpg"
+                            alt="">
+                    </div>
+                    <span class="absolute bg-red-600 text-white -mt-12 rounded px-2 py-1">International</span>
+                    <div class="mx-5 my-5">
+                        <p class="text-red-500 font-bold"><i class="ri-calendar-line"></i> June 7, 2023</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicAlias laborum consequatur quaerat nam
+                            accusantium molestiae?</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- advertise -->
+        <div class="mx-12 my-12">
+            <img class="w-full" src="http://newsdemo.bitmapitsolution.com/images/ads/Onlinekhabar.com1230-1001_1672120181.gif" alt="">
+        </div>
+
+        <!-- Footer section -->
+        <div class="bg-blue-800">
+            <div class="grid grid-cols-3 gap-5 mx-12 my-12">
+                <div>
+                    <img class="bg-white px-3 py-1 my-5" src="http://newsdemo.bitmapitsolution.com/images/logo.png" alt="">
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <script>
+            // swiper section
+            var swiper2 = new Swiper(".myswiper2", {
+                spaceBetween: 20,
+                slidesPerView: 3,
+                loop: true,
+                autoplay: {
+                    delay: 1500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                speed: 3000,
+                // breakpoints: {
+                //     0: {
+                //         slidesPerView: 1,
+                //         spaceBetween: 20,
+                //     },
+                //     768: {
+                //         slidesPerView: 4,
+                //         spaceBetween: 40,
+                //     },
+                //     1024: {
+                //         slidesPerView: 5,
+                //         spaceBetween: 50,
+                //     },
+                // },
+            });
+        </script>
+        <script>
+            var swiper = new Swiper(".myswiper", {
+                spaceBetween: 20,
+                slidesPerView: 4,
+                loop: true,
+                autoplay: {
+                    delay: 1500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                speed: 3000
+            });
+        </script>
+
+
+</html>
